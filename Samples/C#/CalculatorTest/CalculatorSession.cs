@@ -39,7 +39,7 @@ namespace CalculatorTest
                 DesiredCapabilities appCapabilities = new DesiredCapabilities();
                 appCapabilities.SetCapability("app", CalculatorAppId);
                 appCapabilities.SetCapability("deviceName", "WindowsPC");
-                appCapabilities.SetCapability("ms:waitForAppLaunch", "25");
+                appCapabilities.SetCapability("ms:waitForAppLaunch", "35");
                 session = new WindowsDriver<WindowsElement>(new Uri(WindowsApplicationDriverUrl), appCapabilities);
                 Assert.IsNotNull(session);
 
